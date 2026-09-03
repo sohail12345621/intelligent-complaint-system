@@ -2,20 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Admin Panel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin — Complaint Desk</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <div class="container wide">
-    <h1>Admin Panel</h1>
+  <div class="topbar">
+    <span class="mark">Complaint Desk</span>
+    <a href="/">Home</a>
+  </div>
+
+  <div class="page">
+    <div class="intro">
+      <h1>All complaints</h1>
+      <p>Review incoming complaints and move each one through its status as it gets handled.</p>
+    </div>
+
+    <div class="stats" id="stats"></div>
+
     <table id="complaintsTable">
       <thead>
         <tr><th>ID</th><th>Complaint</th><th>Category</th><th>Priority</th><th>Status</th><th>Date</th></tr>
       </thead>
       <tbody></tbody>
     </table>
-    <p class="admin-link"><a href="/">Home</a></p>
   </div>
+
   <script src="/static/script.js"></script>
   <script>loadComplaints();</script>
 </body>

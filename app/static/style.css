@@ -1,16 +1,274 @@
-body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 20px; }
-.container { max-width: 600px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-.container.wide { max-width: 900px; }
-h1 { font-size: 22px; text-align: center; margin-bottom: 20px; }
-textarea { width: 100%; padding: 10px; font-size: 14px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
-button { margin-top: 12px; padding: 10px 20px; background: #2563eb; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
-button:hover { background: #1d4ed8; }
-#result { margin-top: 20px; padding: 15px; background: #f0f9ff; border-radius: 4px; display: none; }
-.admin-link { text-align: center; margin-top: 20px; }
-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-th, td { border: 1px solid #ddd; padding: 8px; font-size: 13px; text-align: left; }
-th { background: #2563eb; color: #fff; }
-select { padding: 4px; }
-.HIGH { color: #dc2626; font-weight: bold; }
-.MEDIUM { color: #d97706; font-weight: bold; }
-.LOW { color: #16a34a; font-weight: bold; }
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --ink: #16213e;
+  --ink-soft: #4a5578;
+  --bg: #f3f4f7;
+  --surface: #ffffff;
+  --line: #dcdfe6;
+  --accent: #c98a2c;
+  --accent-deep: #8a5d1c;
+  --high: #b8433a;
+  --medium: #c98a2c;
+  --low: #2f7a5c;
+  --radius: 6px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.topbar {
+  background: var(--ink);
+  color: #fff;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar .mark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+.topbar a {
+  color: #d8dceb;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #3a4468;
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  transition: background 0.15s ease;
+}
+
+.topbar a:hover { background: #232d52; }
+
+.page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.intro h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+
+.intro p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  margin: 0 0 36px;
+  max-width: 52ch;
+}
+
+.form-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.form-panel label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+
+textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  resize: vertical;
+  color: var(--ink);
+}
+
+textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+
+button {
+  margin-top: 16px;
+  padding: 11px 24px;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover { background: #232d52; }
+
+#result {
+  margin-top: 20px;
+  display: none;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: #fbfaf7;
+  padding: 18px 20px;
+}
+
+#result .ticket-id {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+#result .ticket-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+#result .ticket-row span.label {
+  color: var(--ink-soft);
+  margin-right: 6px;
+}
+
+/* Process flow — genuine sequence, so numbered */
+.flow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+  gap: 8px;
+}
+
+.flow-step {
+  flex: 1;
+  text-align: left;
+  position: relative;
+  padding-top: 14px;
+  border-top: 2px solid var(--line);
+}
+
+.flow-step .num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  color: var(--accent-deep);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.flow-step .step-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.flow-step .step-desc {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+/* Admin page */
+.stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  flex: 1;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.stat-card .count {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.stat-card .stat-label {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th {
+  text-align: left;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  background: #fafbfc;
+}
+
+td {
+  padding: 12px 14px;
+  font-size: 13.5px;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+
+tr:last-child td { border-bottom: none; }
+
+.pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pill.HIGH { background: #fbe7e5; color: var(--high); }
+.pill.MEDIUM { background: #f8ecd7; color: var(--medium); }
+.pill.LOW { background: #e2f0e8; color: var(--low); }
+
+select {
+  padding: 5px 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  font-family: inherit;
+  font-size: 13px;
+  background: var(--surface);
+}
+
+@media (max-width: 640px) {
+  .flow { flex-direction: column; gap: 20px; }
+  .flow-step { border-top: none; border-left: 2px solid var(--line); padding: 0 0 0 14px; }
+  .stats { flex-direction: column; }
+  table, thead, tbody, th, td, tr { display: block; }
+  thead { display: none; }
+  td { border-bottom: none; padding: 6px 14px; }
+  tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+}

@@ -2,17 +2,54 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Complaint System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Complaint Desk</title>
 <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Intelligent Complaint Classification &amp; Priority Detection System</h1>
-    <textarea id="complaintText" rows="5" placeholder="Describe your complaint..."></textarea>
-    <button onclick="submitComplaint()">Submit</button>
-    <div id="result"></div>
-    <p class="admin-link"><a href="/admin">Admin Panel</a></p>
+  <div class="topbar">
+    <span class="mark">Complaint Desk</span>
+    <a href="/admin">Admin</a>
   </div>
+
+  <div class="page">
+    <div class="intro">
+      <h1>Report a complaint</h1>
+      <p>Describe what's wrong in your own words. The system reads it, sorts it into the right department, and flags how urgent it is — automatically.</p>
+    </div>
+
+    <div class="form-panel">
+      <label for="complaintText">Complaint</label>
+      <textarea id="complaintText" rows="5" placeholder="e.g. There has been no electricity in my hostel room since yesterday."></textarea>
+      <button onclick="submitComplaint()">Submit complaint</button>
+
+      <div id="result"></div>
+    </div>
+
+    <div class="flow">
+      <div class="flow-step">
+        <div class="num">01</div>
+        <div class="step-title">Submit</div>
+        <div class="step-desc">You describe the issue in plain language.</div>
+      </div>
+      <div class="flow-step">
+        <div class="num">02</div>
+        <div class="step-title">Classify</div>
+        <div class="step-desc">A trained model sorts it into one of nine categories.</div>
+      </div>
+      <div class="flow-step">
+        <div class="num">03</div>
+        <div class="step-title">Prioritize</div>
+        <div class="step-desc">Keyword rules flag it HIGH, MEDIUM, or LOW.</div>
+      </div>
+      <div class="flow-step">
+        <div class="num">04</div>
+        <div class="step-title">Track</div>
+        <div class="step-desc">Admins update its status as it gets resolved.</div>
+      </div>
+    </div>
+  </div>
+
   <script src="/static/script.js"></script>
 </body>
 </html>
