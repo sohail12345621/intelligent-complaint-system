@@ -1,91 +1,271 @@
 text,category
-"There has been no electricity in my hostel room since yesterday.",Electricity
-"Power supply has been cut off in block B.",Electricity
-"Frequent power fluctuations damaging my electronics.",Electricity
-"No electricity in the corridor lights at night.",Electricity
-"Electric wiring is exposed and sparking near my room.",Electricity
-"Voltage is too low, appliances are not working.",Electricity
-"Streetlights near hostel gate are not working.",Electricity
-"Fan and lights not working since two days.",Electricity
-"Short circuit in room causing sparks.",Electricity
-"Electricity bill meter seems faulty.",Electricity
-"No water supply in the hostel for two days.",Water
-"Water tank is leaking heavily onto the floor.",Water
-"Drinking water tastes bad and looks dirty.",Water
-"Bathroom taps are not working.",Water
-"Water pressure is very low in my room.",Water
-"Major water leakage flooding the corridor.",Water
-"Water cooler on third floor is broken.",Water
-"No hot water in the bathroom.",Water
-"Pipes are leaking under the sink.",Water
-"Water supply timing is very irregular.",Water
-"Wifi is not working in my hostel room.",Internet
-"Internet speed is extremely slow.",Internet
-"Unable to connect to campus wifi network.",Internet
-"Internet not working since morning, need it for classes.",Internet
-"Router in common room is not functioning.",Internet
-"Wifi password not accepted, unable to login.",Internet
-"Frequent internet disconnections during online exams.",Internet
-"LAN cable in library is damaged.",Internet
-"Wifi signal is too weak on the top floor.",Internet
-"Internet outage affecting entire hostel block.",Internet
-"Hostel room door lock is broken.",Hostel
-"Roommate issue causing constant disturbance at night.",Hostel
-"Hostel mess food quality is very poor.",Hostel
-"Bed and mattress in my room are damaged.",Hostel
-"Hostel washroom is not cleaned regularly.",Hostel
-"Request for a room change due to overcrowding.",Hostel
-"Hostel curfew timing needs to be reconsidered.",Hostel
-"Cupboard in hostel room is broken.",Hostel
-"Hostel warden not responding to complaints.",Hostel
-"Common room furniture is damaged.",Hostel
-"College bus is always late in the morning.",Transport
-"Bus driver is driving rashly and dangerously.",Transport
-"No bus available on the return route in evening.",Transport
-"Bus pass renewal process is very slow.",Transport
-"College bus broke down on the highway.",Transport
-"Overcrowded buses during peak hours.",Transport
-"Bus route does not cover my area anymore.",Transport
-"AC in college bus is not working.",Transport
-"Bus conductor was rude to students.",Transport
-"Bus timing schedule needs to be updated.",Transport
-"Exam timetable clashes with another subject.",Academics
-"Professor has not uploaded lecture notes for the semester.",Academics
-"Request for revaluation of exam answer sheet.",Academics
-"Attendance not marked correctly by faculty.",Academics
-"Syllabus copy is not available online.",Academics
-"Lab session was cancelled without prior notice.",Academics
-"Need extra classes before the final exam.",Academics
-"Marks not updated on the student portal.",Academics
-"Assignment submission deadline is unreasonable.",Academics
-"Request for a duplicate mark sheet.",Academics
-"Classroom projector is not working.",Maintenance
-"Broken chairs in the lecture hall.",Maintenance
-"Ceiling fan making loud noise and needs repair.",Maintenance
-"Washroom door is broken in the academic block.",Maintenance
-"Air conditioner in lab not cooling properly.",Maintenance
-"Damaged flooring in the corridor is a hazard.",Maintenance
-"Repeated maintenance problem with the lift.",Maintenance
-"Windows in classroom are broken.",Maintenance
-"Paint is peeling off the hostel walls.",Maintenance
-"Library shelves are damaged and need repair.",Maintenance
-"Unknown person seen loitering near girls hostel at night.",Security
-"Security guard absent from gate after 10pm.",Security
-"CCTV camera in parking lot is not working.",Security
-"There was an accident near the main gate.",Security
-"Fire alarm went off but no one responded.",Security
-"Suspicious activity reported near the library.",Security
-"Medical emergency in hostel, need immediate help.",Security
-"Theft reported in the hostel common room.",Security
-"Main gate lock is broken, security risk.",Security
-"Fire safety equipment missing in the building.",Security
-"Suggestion to add more dustbins around campus.",Other
-"Request for better lighting in the parking area.",Other
-"General feedback about the college website.",Other
-"Would like more sports equipment in the gym.",Other
-"Suggestion to extend library working hours.",Other
-"Request for a suggestion box in every block.",Other
-"General inquiry about scholarship application process.",Other
-"Feedback about the canteen menu variety.",Other
-"Request for more study rooms during exams.",Other
-"General complaint about noise from construction nearby.",Other
+"No electricity in my hostel room since last night.",Electricity
+"Frequent power cuts in the boys hostel block C.",Electricity
+"Voltage fluctuations have damaged my laptop charger.",Electricity
+"The exposed wiring near the staircase is dangerous.",Electricity
+"Streetlights outside the library are not working.",Electricity
+"Electric geyser in the bathroom isn't heating water.",Electricity
+"MCB keeps tripping every time I switch on the heater.",Electricity
+"Power backup generator did not start during the outage.",Electricity
+"There was a sudden electric shock from the switchboard.",Electricity
+"Ceiling fan in room 204 sparks when switched on.",Electricity
+"The electricity meter reading seems incorrect this month.",Electricity
+"Transformer near the main gate made a loud sound and stopped working.",Electricity
+"No power supply to the charging points in the common room.",Electricity
+"Faulty electrical panel in the library causing flickering lights.",Electricity
+"Exam hall lights kept flickering during the test.",Electricity
+"Power cut happened right in the middle of my online exam.",Electricity
+"UPS backup in the server room is not functioning.",Electricity
+"Extension cord in my room is overloaded and heats up.",Electricity
+"Electric pole near the hostel gate looks damaged and unsafe.",Electricity
+"Live wire is exposed near the garden area.",Electricity
+"Delayed restoration of power after yesterday's outage.",Electricity
+"Tube light in the corridor keeps flickering constantly.",Electricity
+"Electricity bill charged seems higher than usual, need clarification.",Electricity
+"Inverter in the hostel is not charging properly.",Electricity
+"Switchboard in the common bathroom has a burning smell.",Electricity
+"Elevator stopped working due to a power failure.",Electricity
+"Air conditioner in the seminar hall isn't getting power.",Electricity
+"Wiring short circuit caused a small fire in the pantry.",Electricity
+"Plug points in my room are completely dead.",Electricity
+"Generator fuel ran out during a long power cut.",Electricity
+"No water supply in my hostel block since morning.",Water
+"Water tank on the terrace appears to be leaking.",Water
+"Drinking water from the cooler tastes odd and smells bad.",Water
+"Bathroom taps in the third floor washroom are broken.",Water
+"Low water pressure makes it hard to shower in the morning.",Water
+"Corridor is flooded due to a major pipe burst.",Water
+"Water cooler near the canteen has stopped working.",Water
+"No hot water available in the bathroom geysers.",Water
+"Sink pipe under the washbasin is leaking continuously.",Water
+"Water supply timing has become extremely unpredictable.",Water
+"RO purifier in the mess is not filtering water properly.",Water
+"Water logging near the hostel entrance after rain.",Water
+"Overflowing water tank is wasting a lot of water.",Water
+"Contaminated water is coming through the tap.",Water
+"Water pump in the basement is making a strange noise.",Water
+"No water in the washrooms near the academic block.",Water
+"Leaking valve is causing water wastage in the garden area.",Water
+"Water heater in the girls hostel is not functioning.",Water
+"Muddy water is coming out of the tap.",Water
+"Drainage water is backing up into the bathroom.",Water
+"Water supply pipe burst near the parking lot.",Water
+"Cold water only, hot water line seems disconnected.",Water
+"Water cooler filter needs replacement, water tastes metallic.",Water
+"Leaking overhead tank is dripping onto the corridor below.",Water
+"No water pressure on the top floor rooms.",Water
+"Water tanker did not arrive as scheduled today.",Water
+"Toilet flush tank is leaking constantly.",Water
+"Water stagnation near the sports ground is a concern.",Water
+"Kitchen tap in the mess is dripping non-stop.",Water
+"Water quality test report needs to be shared with students.",Water
+"WiFi has not been working in my room since yesterday.",Internet
+"Internet speed is extremely slow during peak hours.",Internet
+"Unable to connect to the campus wifi network at all.",Internet
+"Router in the common room seems to be malfunctioning.",Internet
+"Wifi password is not being accepted despite being correct.",Internet
+"Frequent disconnections happened during my online exam.",Internet
+"LAN cable in the computer lab is damaged.",Internet
+"Wifi signal is very weak on the top floor of the hostel.",Internet
+"Entire hostel block lost internet access this morning.",Internet
+"Internet keeps dropping every few minutes in the library.",Internet
+"Unable to access the college portal due to network issues.",Internet
+"Ethernet port in my room does not seem to work.",Internet
+"VPN access for online classes is not connecting properly.",Internet
+"Wifi router in block D needs to be restarted, it's stuck.",Internet
+"Slow internet is affecting video calls with faculty.",Internet
+"Bandwidth seems throttled during evening hours.",Internet
+"Campus wifi login page is not loading at all.",Internet
+"Internet outage affecting the entire academic building.",Internet
+"Streaming lecture videos keeps buffering constantly.",Internet
+"Wifi extender in the hostel corridor is not working.",Internet
+"Unable to submit assignment online due to internet failure.",Internet
+"Network congestion during placement drive registrations.",Internet
+"Wifi disconnects automatically after a few minutes of use.",Internet
+"Internet is completely down in the reading room.",Internet
+"Router lights are blinking red, seems to be an issue.",Internet
+"DNS errors are preventing access to the college website.",Internet
+"Wifi speed test shows far below promised bandwidth.",Internet
+"Hostel wifi router needs a firmware update, keeps crashing.",Internet
+"Unable to connect any device to the hostel network today.",Internet
+"Video conferencing app keeps freezing due to poor connectivity.",Internet
+"Hostel room door lock is completely broken.",Hostel
+"My roommate's loud music at night is very disturbing.",Hostel
+"Mess food quality has been really poor this week.",Hostel
+"Mattress in my room is torn and needs replacement.",Hostel
+"Washroom on my floor is not cleaned regularly.",Hostel
+"I would like to request a room change due to overcrowding.",Hostel
+"Hostel curfew timing feels too strict for exam season.",Hostel
+"Cupboard in my room has a broken hinge.",Hostel
+"Warden has not responded to my complaint for days.",Hostel
+"Common room furniture is damaged and needs repair.",Hostel
+"Pest control has not been done in my room for months.",Hostel
+"Hostel corridor lights remain switched off at night.",Hostel
+"New hostel allotment seems unfair, please review it.",Hostel
+"Laundry service in the hostel is inconsistent.",Hostel
+"Hostel mess menu needs more variety of food options.",Hostel
+"Room ventilation is poor, it gets very stuffy.",Hostel
+"Bunk bed frame is wobbly and feels unsafe.",Hostel
+"Hostel gate closes too early for students with late classes.",Hostel
+"Cleaning staff skipped my floor for the whole week.",Hostel
+"Visitors are not being properly logged at the hostel entrance.",Hostel
+"Room heating is a concern during winter nights.",Hostel
+"Complaint about excessive noise from the floor above at night.",Hostel
+"Hostel room needs urgent pest fumigation, seeing cockroaches.",Hostel
+"Shared bathroom door does not lock properly.",Hostel
+"Requesting extra blanket allocation for winter season.",Hostel
+"Hostel mess timing clashes with my evening classes.",Hostel
+"Damaged window pane letting in rain during storms.",Hostel
+"Hostel room key was lost, need a replacement process.",Hostel
+"Uneven flooring in my room is a tripping hazard.",Hostel
+"Hostel common kitchen appliances are not maintained well.",Hostel
+"College bus is consistently late every single morning.",Transport
+"Bus driver was driving rashly on the highway today.",Transport
+"No return bus was available on my route this evening.",Transport
+"Bus pass renewal process has been extremely slow.",Transport
+"College bus broke down midway during the morning trip.",Transport
+"Buses are overcrowded during peak commute hours.",Transport
+"My usual bus route no longer covers my locality.",Transport
+"Air conditioning in the college bus isn't working.",Transport
+"Bus conductor behaved rudely with students today.",Transport
+"Bus timing schedule needs to be updated on the website.",Transport
+"Bus did not stop at the designated pickup point.",Transport
+"Seat belts are missing in several rows of the bus.",Transport
+"Bus fare seems to have increased without prior notice.",Transport
+"Driver skipped my stop despite me signaling to stop.",Transport
+"Bus was overbooked and many students had to stand.",Transport
+"Delay in bus arrival caused me to miss my first lecture.",Transport
+"Bus interior is very dirty and needs cleaning.",Transport
+"Requesting an additional bus route for the new campus block.",Transport
+"Bus horn is malfunctioning, could be a safety issue.",Transport
+"Driver was using a mobile phone while driving.",Transport
+"Bus tires look worn out and unsafe for long routes.",Transport
+"Emergency exit door on the bus does not open properly.",Transport
+"Bus schedule clashes with lab timings for evening batch.",Transport
+"No proper shelter at the bus stop during rain.",Transport
+"Bus GPS tracking app shows incorrect live location.",Transport
+"Overloaded luggage compartment caused delay in departure.",Transport
+"Bus staff denied entry despite having a valid pass.",Transport
+"Route change was not communicated to students in advance.",Transport
+"Bus breakdown assistance took over an hour to arrive.",Transport
+"Requesting a special bus for the weekend sports event.",Transport
+"My exam timetable clashes with another subject's exam.",Academics
+"Professor has not uploaded lecture notes for this semester.",Academics
+"I would like to request revaluation of my exam answer sheet.",Academics
+"My attendance has not been marked correctly by faculty.",Academics
+"Syllabus copy for the new semester isn't available online.",Academics
+"Lab session was cancelled without any prior notice.",Academics
+"Requesting extra classes before the upcoming final exam.",Academics
+"My marks have not been updated on the student portal.",Academics
+"Assignment submission deadline feels unreasonably tight.",Academics
+"Requesting a duplicate copy of my mark sheet.",Academics
+"Internal assessment marks were not communicated properly.",Academics
+"Faculty member missed three consecutive scheduled lectures.",Academics
+"Project guide has not responded to my emails in weeks.",Academics
+"Question paper had an error that affected my score.",Academics
+"Requesting a change of elective subject before deadline.",Academics
+"Practical exam schedule overlaps with another department's exam.",Academics
+"Library reference books for this course are outdated.",Academics
+"Grading criteria for the assignment was unclear.",Academics
+"Requesting an extension for my thesis submission.",Academics
+"Lecture recordings from last week are missing online.",Academics
+"Backlog exam registration link is not working.",Academics
+"Faculty advisor meeting slots are fully booked for weeks.",Academics
+"Course credit transfer request has not been processed.",Academics
+"Seminar hall was double-booked for two different classes.",Academics
+"Requesting clarification on the internal exam pattern.",Academics
+"My scholarship application status is not visible on the portal.",Academics
+"Semester result has not been declared despite the deadline passing.",Academics
+"Requesting rescheduling of makeup exam due to illness.",Academics
+"Certificate course enrollment link seems to be broken.",Academics
+"Requesting access to previous year question papers.",Academics
+"Classroom projector has stopped working completely.",Maintenance
+"Several chairs in the lecture hall are broken.",Maintenance
+"Ceiling fan in room 12 makes a loud grinding noise.",Maintenance
+"Washroom door in the academic block is broken.",Maintenance
+"Air conditioner in the computer lab isn't cooling properly.",Maintenance
+"Damaged flooring in the corridor is a tripping hazard.",Maintenance
+"Lift has had repeated breakdowns this month.",Maintenance
+"Windows in the seminar hall are cracked.",Maintenance
+"Paint is peeling off the hostel walls badly.",Maintenance
+"Library shelves are damaged and need urgent repair.",Maintenance
+"Whiteboard marker stains won't come off properly.",Maintenance
+"Classroom door hinge is broken and won't close.",Maintenance
+"Staircase railing is loose and feels unsafe.",Maintenance
+"Podium microphone in the auditorium isn't working.",Maintenance
+"Roof is leaking in the physics lab during rain.",Maintenance
+"Notice board glass panel is cracked and sharp.",Maintenance
+"Water cooler stand is rusted and wobbly.",Maintenance
+"Exhaust fan in the chemistry lab isn't working.",Maintenance
+"Broken tiles in the washroom need replacement.",Maintenance
+"Classroom curtains are torn and need replacing.",Maintenance
+"Projector screen in seminar room is torn.",Maintenance
+"Fire extinguisher near the lab looks expired.",Maintenance
+"Cafeteria tables have broken legs and are unstable.",Maintenance
+"Sports room equipment cupboard lock is broken.",Maintenance
+"Garden benches outside the library are damaged.",Maintenance
+"Parking shed roof sheet has come loose.",Maintenance
+"Main gate hinge is squeaking loudly and needs oiling.",Maintenance
+"Notice board in the corridor fell off the wall.",Maintenance
+"AC vents in the auditorium are clogged with dust.",Maintenance
+"Wooden desks in the classroom are chipped and splintered.",Maintenance
+"An unknown person was seen loitering near the girls hostel at night.",Security
+"Security guard was absent from the gate after 10pm.",Security
+"CCTV camera in the parking lot appears to be non-functional.",Security
+"There was a minor accident near the main gate today.",Security
+"Fire alarm went off but no staff responded promptly.",Security
+"Suspicious activity was reported near the library entrance.",Security
+"There is a medical emergency in the hostel, need immediate help.",Security
+"A theft was reported in the hostel common room.",Security
+"Main gate lock is broken, posing a security risk.",Security
+"Fire safety equipment seems to be missing from this building.",Security
+"Unauthorized visitors were allowed entry without ID checks.",Security
+"Boundary wall near the sports ground has a gap.",Security
+"Emergency exit door was found locked during a drill.",Security
+"Security guard did not check ID cards at the entrance.",Security
+"A stray dog attacked a student near the hostel gate.",Security
+"Suspicious package was found unattended in the corridor.",Security
+"Late night noise near the parking lot raised safety concerns.",Security
+"CCTV footage from last week seems to be missing.",Security
+"Fire extinguisher in the hostel corridor is missing.",Security
+"A student reported being followed near the campus gate.",Security
+"Security personnel were found sleeping during night duty.",Security
+"Broken glass near the entrance could injure someone.",Security
+"Emergency contact numbers are not displayed properly.",Security
+"Unattended construction site poses a safety hazard.",Security
+"A minor fire broke out in the electrical room, put out quickly.",Security
+"Visitor log register has not been maintained properly.",Security
+"Perimeter lighting near the hostel is completely off at night.",Security
+"A scuffle broke out between students near the canteen.",Security
+"Bike theft reported from the two-wheeler parking area.",Security
+"Panic button in the elevator does not seem to work.",Security
+"Suggestion to add more dustbins around the campus.",Other
+"Requesting better lighting in the parking area.",Other
+"General feedback about the college website's usability.",Other
+"Would like more sports equipment available in the gym.",Other
+"Suggestion to extend library working hours during exams.",Other
+"Requesting a suggestion box to be placed in every block.",Other
+"General inquiry about the scholarship application process.",Other
+"Feedback about the limited variety in the canteen menu.",Other
+"Requesting more study rooms available during exam season.",Other
+"General complaint about noise from nearby construction work.",Other
+"Suggestion to introduce more recycling bins on campus.",Other
+"Feedback regarding the college's social media presence.",Other
+"Requesting a suggestion for a new student club to be approved.",Other
+"General query about the process for hostel fee refund.",Other
+"Feedback about the seating arrangement in the auditorium.",Other
+"Suggestion to organize more cultural events this semester.",Other
+"Requesting information about internship opportunities.",Other
+"General feedback on the orientation program for freshers.",Other
+"Suggestion to improve signage around the campus.",Other
+"Requesting details about the alumni network access.",Other
+"Feedback about the quality of printed notices on boards.",Other
+"Suggestion for more vegetarian options in the canteen.",Other
+"Requesting information on the campus recruitment drive.",Other
+"General feedback about the new student ID card design.",Other
+"Suggestion to add a bicycle rental service on campus.",Other
+"Requesting clarification on the dress code policy.",Other
+"Feedback about the college's response time on email queries.",Other
+"Suggestion to introduce mental health awareness sessions.",Other
+"Requesting more benches in the outdoor seating areas.",Other
+"General feedback about the annual college magazine content.",Other
