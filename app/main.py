@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Depends
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 
-from app.database import init_db, insert_complaint, get_all_complaints, update_status
+from app.database import init_db, insert_complaint, get_all_complaints, update_status, get_by_complaint_id
 from app.classifier import predict_category
 from app.priority import detect_priority
 from app.models import ComplaintCreate, StatusUpdate
@@ -22,11 +22,17 @@ def create_complaint(payload: ComplaintCreate):
     priority = detect_priority(payload.text)
 
     try:
-        new_id = insert_complaint(payload.text, category, priority)
+        row = insert_complaint(payload.text, category, priority)
     except Exception:
         raise HTTPException(status_code=500, detail="Database error while saving complaint")
 
-    return {"id": new_id, "category": category, "priority": priority, "status": "Pending"}
+    return {
+        "id": row["id"],
+        "complaint_id": row["complaint_id"],
+        "category": row["category"],
+        "priority": row["priority"],
+        "status": row["status"]
+    }
 
 @app.get("/api/complaints")
 def list_complaints(admin: str = Depends(verify_admin)):
@@ -39,9 +45,20 @@ def change_status(complaint_id: int, payload: StatusUpdate, admin: str = Depends
         raise HTTPException(status_code=404, detail="Complaint not found")
     return {"id": complaint_id, "status": payload.status}
 
+@app.get("/api/track/{complaint_id}")
+def track_complaint(complaint_id: str):
+    result = get_by_complaint_id(complaint_id.strip().upper())
+    if not result:
+        raise HTTPException(status_code=404, detail="No complaint found with that ID")
+    return result
+
 @app.get("/")
 def home():
     return FileResponse("app/static/index.html")
+
+@app.get("/track")
+def track_page():
+    return FileResponse("app/static/track.html")
 
 @app.get("/admin")
 def admin_page(admin: str = Depends(verify_admin)):

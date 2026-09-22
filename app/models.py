@@ -1,6 +1,6 @@
 from pydantic import BaseModel, field_validator
 
-VALID_STATUSES = {"Pending", "In Progress", "Resolved"}
+VALID_STATUSES = {"Pending", "Under Review", "In Progress", "Resolved"}
 
 class ComplaintCreate(BaseModel):
     text: str
